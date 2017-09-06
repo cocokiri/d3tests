@@ -1,0 +1,1421 @@
+{
+  "body": [
+    {
+      "name": "climate",
+      "parent": ""
+    },
+    {
+      "segment": [
+        {
+          "uid": 8678,
+          "filename": "wikipedia_2017_Human impact on the environment.txt",
+          "content_raw": "The intensity and duration of grazing use vary greatly and these , together with terrain , vegetation and climate , influence the nature and importance of grazings environmental impact , which can range from severe to negligible , and in some cases beneficial .",
+          "connective": "influence",
+          "cause_event": "0",
+          "effect_event": "of grazings environmental impact",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "ENABLE"
+        }
+      ],
+      "name": "nature",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5221,
+          "filename": "wikipedia_2017_Economics of global warming.txt",
+          "content_raw": "This is particularly important with respect to climate change , due to the long term nature of the problem .",
+          "connective": "due to",
+          "cause_event": "of problem",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "climate change",
+      "parent": "nature"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5787,
+          "filename": "wikipedia_2017_Effects of global warming on human health.txt",
+          "content_raw": "With the increase in temperatures worldwide due to climate change the increase in flooding is unavoidable .",
+          "connective": "due to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "temperatures",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5740,
+          "filename": "wikipedia_2017_Effects of global warming on human health.txt",
+          "content_raw": "According to a study of east africas smallholder farms , impacts of climate change on agriculture are already being seen there resulting in changes to farming practices such as intercropping , crop , soil , land , water and livestock management systems , and introduction of new technologies and seed varieties by some of the farmers .",
+          "connective": "result in",
+          "cause_event": "impacts of",
+          "effect_event": "changes",
+          "cause_switch": "1",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "farming practices",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 1777,
+          "filename": "wikipedia_2017_Carbon sink.txt",
+          "content_raw": "In february 2009 , science daily reported that the southern indian ocean is becoming less effective at absorbing carbon dioxide due to changes to the region 's climate which include higher wind speeds .",
+          "connective": "due to",
+          "cause_event": "changes to",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "carbon dioxide",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 12464,
+          "filename": "wikipedia_2017_Retreat of glaciers since 1850.txt",
+          "content_raw": "Climate change may cause variations in both temperature and snowfall , resulting in changes in mass balance .",
+          "connective": "cause in",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        },
+        {
+          "uid": 7417,
+          "filename": "wikipedia_2017_Glacier mass balance.txt",
+          "content_raw": "Climate change may cause variations in both temperature and snowfall , causing changes in the surface mass balance .",
+          "connective": "cause in",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "variations",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 8053,
+          "filename": "wikipedia_2017_Glossary of climate change.txt",
+          "content_raw": "Holocene climatic optimum a warm period during roughly the interval 9000 to 5000 years b.p. ice age a period of long term reduction in the temperature of earth 's climate , resulting in an expansion of the continental ice sheets , polar ice sheets and alpine glaciers .",
+          "connective": "result in",
+          "cause_event": "period of",
+          "effect_event": "expansion of",
+          "cause_switch": "1",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "continental ice sheets",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3788,
+          "filename": "wikipedia_2017_Climate change.txt",
+          "content_raw": "Some changes in climate may result in increased precipitation and warmth , resulting in improved plant growth and the subsequent sequestration of airborne co2 .",
+          "connective": "result in",
+          "cause_event": "changes in",
+          "effect_event": "increased",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "precipitation",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 4483,
+          "filename": "wikipedia_2017_Cryosphere.txt",
+          "content_raw": "Information on river ice conditions is less useful as a climatic proxy because ice formation is strongly dependent on river flow regime , which is affected by precipitation , snow melt , and watershed runoff as well as being subject to human interference that directly modifies channel flow , or that indirectly affects the runoff via land use practices .",
+          "connective": "affected by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "river flow regime",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 8454,
+          "filename": "wikipedia_2017_History of climate change science.txt",
+          "content_raw": "The 1979 world climate conference of the world meteorological organization concluded it appears plausible that an increased amount of carbon dioxide in the atmosphere can contribute to a gradual warming of the lower atmosphere , especially at higher latitudes.it is possible that some effects on a regional and global scale may be detectable before the end of this century and become significant before the middle of the next century .",
+          "connective": "contribute to",
+          "cause_event": "increased amount of",
+          "effect_event": "of lower atmosphere",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "ENABLE"
+        }
+      ],
+      "name": "warming",
+      "parent": "carbon dioxide"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6138,
+          "filename": "wikipedia_2017_Effects of global warming on oceans.txt",
+          "content_raw": "A higher amount of carbon dioxide in the atmosphere leads to higher global temperatures , which then results in thermal expansion of seawater and melting of glaciers and ice sheets .",
+          "connective": "lead to",
+          "cause_event": "higher amount of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "global temperatures",
+      "parent": "carbon dioxide"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14424,
+          "filename": "wikipedia_2017_Volcano.txt",
+          "content_raw": "Climate change can reportedly trigger volcanic activity in sensitive areas by changing pressure of ice or seawater and extreme weather .",
+          "connective": "trigger",
+          "cause_event": "0",
+          "effect_event": "in sensitive areas",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "volcanic activity",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6017,
+          "filename": "wikipedia_2017_Effects of global warming on humans.txt",
+          "content_raw": "Not only is there increased demand for fresh water , but climate change can increase the likelihood of drought and fresh water shortages .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "likelihood",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "fresh water shortages",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7976,
+          "filename": "wikipedia_2017_Global warming.txt",
+          "content_raw": "Climate change could result in global , large scale changes in natural and social systems .",
+          "connective": "result in",
+          "cause_event": "0",
+          "effect_event": "in natural systems",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "global scale changes",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3371,
+          "filename": "wikipedia_2017_Climate change in the United States.txt",
+          "content_raw": "A warmer and drier climate would lead to greater evaporation , as much as a 35 % decrease in streamflow , and less water for recharging groundwater aquifers .",
+          "connective": "lead to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        },
+        {
+          "uid": 3350,
+          "filename": "wikipedia_2017_Climate change in the United States.txt",
+          "content_raw": "A warmer climate would increase evaporation and shorten the snow season in the mountains , resulting in earlier spring runoff and reduced summer streamflow .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "evaporation",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14496,
+          "filename": "wikipedia_2017_Water cycle.txt",
+          "content_raw": "Without the cooling , the effect of evaporation on the greenhouse effect would lead to a much higher surface temperature of 67 c , and a warmer planet .",
+          "connective": "lead to",
+          "cause_event": "effect of",
+          "effect_event": "of c",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "surface temperature",
+      "parent": "evaporation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2883,
+          "filename": "wikipedia_2017_Climate change in Argentina.txt",
+          "content_raw": "Agriculture will be affected by climate change .",
+          "connective": "affected by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "agriculture",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14734,
+          "filename": "wikipedia_2017_White dwarf.txt",
+          "content_raw": "As a white dwarf cools , its surface temperature decreases , the radiation which it emits reddens , and its luminosity decreases .",
+          "connective": "decrease",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "radiation",
+      "parent": "surface temperature"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3396,
+          "filename": "wikipedia_2017_Climate change in the United States.txt",
+          "content_raw": "Beyond growth rates , climate change could affect washington forests by changing the range and life cycle of pests .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "washington forests",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 8877,
+          "filename": "wikipedia_2017_Ice age.txt",
+          "content_raw": "For example , changes in earth 's atmospheric composition may alter the climate , while climate change itself can change the atmospheric composition .",
+          "connective": "change",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "atmospheric composition",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14012,
+          "filename": "wikipedia_2017_United Nations Framework Convention on Climate Change.txt",
+          "content_raw": "The climate and development knowledge network created a guide for ndc implementation , for the use of decision makers in less developed countries .",
+          "connective": "create",
+          "cause_event": "0",
+          "effect_event": "for ndc implementation",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CREATE"
+        }
+      ],
+      "name": "guide",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6864,
+          "filename": "wikipedia_2017_Environmental migrant.txt",
+          "content_raw": "On further appeal the new zealand supreme court confirmed the earlier adverse rulings against the application for refugee status , with the supreme court also rejecting the proposition that environmental degradation resulting from climate change or other natural disasters could never create a pathway into the refugee convention or protected person jurisdiction .",
+          "connective": "result from",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "environmental degradation",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2487,
+          "filename": "wikipedia_2017_Climate change and agriculture.txt",
+          "content_raw": "Climate change may increase the amount of arable land in high latitude region by reduction of the amount of frozen lands .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "amount of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "arable land",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5954,
+          "filename": "wikipedia_2017_Effects of global warming on humans.txt",
+          "content_raw": "As the climate warms , it changes the nature of global rainfall , evaporation , snow , stream flow and other factors that affect water supply and quality .",
+          "connective": "affect",
+          "cause_event": "other factors",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "water supply",
+      "parent": "nature"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5087,
+          "filename": "wikipedia_2017_Drought.txt",
+          "content_raw": "Cyanotoxin accumulation within food chains and water supply , some of which are among the most potent toxins known to science , can cause cancer with low exposure over long term .",
+          "connective": "cause",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "cancer",
+      "parent": "water supply"
+    },
+    {
+      "segment": [
+        {
+          "uid": 12798,
+          "filename": "wikipedia_2017_Scientific opinion on climate change.txt",
+          "content_raw": "Evidence from the geological record is consistent with the physics that shows that adding large amounts of carbon dioxide to the atmosphere warms the world and may lead to : higher sea levels and flooding of low lying coasts .",
+          "connective": "lead to",
+          "cause_event": "large amounts of",
+          "effect_event": "of low lying coasts",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "flooding",
+      "parent": "carbon dioxide"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3007,
+          "filename": "wikipedia_2017_Climate change in China.txt",
+          "content_raw": "While because of the southern regions over abundance in rainfall , most of its water is lost due to flooding .",
+          "connective": "due to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "water",
+      "parent": "flooding"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6195,
+          "filename": "wikipedia_2017_Effects of global warming on South Asia.txt",
+          "content_raw": "Its sea level , temperature and evaporation are increasing , and the changes in precipitation and cross boundary river flows are already beginning to cause drainage congestion .",
+          "connective": "cause",
+          "cause_event": "changes in",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "drainage congestion",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7071,
+          "filename": "wikipedia_2017_Extreme weather.txt",
+          "content_raw": "Thomas knutson and robert tuleya of the noaa stated in 2004 that warming induced by greenhouse gas may lead to increasing occurrence of highly destructive category 5 storms .",
+          "connective": "lead to",
+          "cause_event": "0",
+          "effect_event": "occurrence of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "destructive category",
+      "parent": "warming"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14426,
+          "filename": "wikipedia_2017_Volcano.txt",
+          "content_raw": "Climate change can reportedly trigger volcanic activity in sensitive areas by changing pressure of ice or seawater and extreme weather .",
+          "connective": "change",
+          "cause_event": "0",
+          "effect_event": "of ice",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "pressure",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3397,
+          "filename": "wikipedia_2017_Climate change in the United States.txt",
+          "content_raw": "Beyond growth rates , climate change could affect washington forests by changing the range and life cycle of pests .",
+          "connective": "change",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "life cycle",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 14017,
+          "filename": "wikipedia_2017_United Nations Framework Convention on Climate Change.txt",
+          "content_raw": "4 c warming would lead to significantly increased risks , with potential impacts including widespread loss of biodiversity and reduced global and regional food security .",
+          "connective": "lead to",
+          "cause_event": "0",
+          "effect_event": "significantly increased risks with",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "potential impacts",
+      "parent": "warming"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6345,
+          "filename": "wikipedia_2017_Effects of global warming.txt",
+          "content_raw": "In social systems , unique cultures may be lost due to climate change .",
+          "connective": "due to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "social systems",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 13686,
+          "filename": "wikipedia_2017_Temperature record of the past 1000 years.txt",
+          "content_raw": "This is complemented by climate field reconstruction methods which show how climate patterns have developed over large spatial areas , making the reconstruction useful for investigating natural variability and long term oscillations as well as for comparisons with patterns produced by climate models .",
+          "connective": "produced by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CREATE"
+        }
+      ],
+      "name": "patterns",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3921,
+          "filename": "wikipedia_2017_Climate oscillation.txt",
+          "content_raw": "Atmospheric anomaly 100000 year problem climate pattern global catastrophic risk historical climatology teleconnection epoch el nino 's extended family : an introduction to the cyclic patterns that determine global weather nasa earth observatory earth changes gallery : climate oscillations michael wells mandeville the physical evidence of earth 's unstoppable 1500 year climate cycle national center for policy analysis 5 internal climate variability catholic university of louvain understanding global climate patterns usa today , april 19 , 2006 natural climate oscillations of short duration and the long term climate warming sorting out the climate system usgcrp , march 20 , 2000 oceanic and atmospheric climate data climate prediction center , noaa global climate change : vital signs of the planet nasa climate website",
+          "connective": "determine",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "global weather nasa earth observatory earth changes gallery",
+      "parent": "patterns"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6958,
+          "filename": "wikipedia_2017_Extinction event.txt",
+          "content_raw": "Furthermore , the permiantriassic extinction event has been suggested to have been caused by warming .",
+          "connective": "caused by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "permiantriassic extinction event",
+      "parent": "warming"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5389,
+          "filename": "wikipedia_2017_Effects of climate change on plant biodiversity.txt",
+          "content_raw": "The rise of temperatures and lack of precipitation results in different river floodplains , which reduce the populations of people sensitive to flood risk .",
+          "connective": "result in",
+          "cause_event": "rise of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "river floodplains",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5746,
+          "filename": "wikipedia_2017_Effects of global warming on human health.txt",
+          "content_raw": "According to a study of east africas smallholder farms , impacts of climate change on agriculture are already being seen there resulting in changes to farming practices such as intercropping , crop , soil , land , water and livestock management systems , and introduction of new technologies and seed varieties by some of the farmers .",
+          "connective": "result in",
+          "cause_event": "impacts of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "crop",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 8443,
+          "filename": "wikipedia_2017_History of climate change science.txt",
+          "content_raw": "In his 1968 book the population bomb , paul ehrlich wrote , the greenhouse effect is being enhanced now by the greatly increased level of carbon dioxide .",
+          "connective": "enhanced by",
+          "cause_event": "greatly increased level of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "greenhouse effect",
+      "parent": "carbon dioxide"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7077,
+          "filename": "wikipedia_2017_Faint young Sun paradox.txt",
+          "content_raw": "Carbonyl sulfide is an efficient greenhouse gas and the scientists estimate that the additional greenhouse effect would have been sufficient to prevent earth from freezing over .",
+          "connective": "prevent",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "PREVENT"
+        }
+      ],
+      "name": "earth",
+      "parent": "greenhouse effect"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3712,
+          "filename": "wikipedia_2017_Climate change.txt",
+          "content_raw": "These variations can affect global average surface temperature by redistributing heat between the deep ocean and the atmopshere and by altering the cloud and water vapor and sea ice distribution which can affect the total energy budget of the earth .",
+          "connective": "redistribute",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "heat",
+      "parent": "variations"
+    },
+    {
+      "segment": [
+        {
+          "uid": 4161,
+          "filename": "wikipedia_2017_Coal.txt",
+          "content_raw": "When compared to coal , burning natural gas for power or heat results in half the carbon dioxide emissions .",
+          "connective": "result in",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "carbon dioxide emissions",
+      "parent": "heat"
+    },
+    {
+      "segment": [
+        {
+          "uid": 707,
+          "filename": "wikipedia_2017_Attribution of recent climate change.txt",
+          "content_raw": "A number of commenters had argued that recent climate change could be attributed to changes in solar irradiance .",
+          "connective": "attribute to",
+          "cause_event": "0",
+          "effect_event": "changes in",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "ENABLE"
+        }
+      ],
+      "name": "solar irradiance",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6296,
+          "filename": "wikipedia_2017_Effects of global warming.txt",
+          "content_raw": "Sectors sensitive to climate change include water resources , coastal zones , human settlements , and human health .",
+          "connective": "sensitive to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "ENABLE"
+        }
+      ],
+      "name": "sectors",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3029,
+          "filename": "wikipedia_2017_Climate change in Europe.txt",
+          "content_raw": "Experts have warned that the climate change may increase the number of global climate refugees from 150 million in 2008 to 800 million in future .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "number of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "global climate refugees",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 9278,
+          "filename": "wikipedia_2017_IPCC Fourth Assessment Report.txt",
+          "content_raw": "Changes affecting algae , plankton , fish and zooplankton because rising water temperatures and changes in : ice cover salinity oxygen levels water circulation with a very high confidence wgii asserts that climate change is affecting terrestrial biological systems in that : spring events such as the unfolding of leaves , laying of eggs , and migration are happening earlier .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "terrestrial biological systems",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7615,
+          "filename": "wikipedia_2017_Global dimming.txt",
+          "content_raw": "On the other hand , global dimming is affected by evaporation and rain .",
+          "connective": "affected by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "global dimming",
+      "parent": "evaporation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 9270,
+          "filename": "wikipedia_2017_IPCC Fourth Assessment Report.txt",
+          "content_raw": "With a high confidence wgii asserts that climate change has resulted in : more and larger glacial lakes .",
+          "connective": "result in",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "glacial lakes",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2369,
+          "filename": "wikipedia_2017_Climate change and agriculture.txt",
+          "content_raw": "Future climate change will likely negatively affect crop production in low latitude countries , while effects in northern latitudes may be positive or negative .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "in low latitude countries",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "crop production",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3061,
+          "filename": "wikipedia_2017_Climate change in New Zealand.txt",
+          "content_raw": "New zealand is being affected by climate change and the impacts are predicted to increase in future .",
+          "connective": "affected by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "zealand",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5535,
+          "filename": "wikipedia_2017_Effects of global warming on human health.txt",
+          "content_raw": "Increased precipitation can increase mosquito population indirectly by expanding larval habitat and food supply .",
+          "connective": "expand",
+          "cause_event": "increased",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "UNKNOWN"
+        }
+      ],
+      "name": "food supply",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6607,
+          "filename": "wikipedia_2017_El NinoSouthern Oscillation.txt",
+          "content_raw": "More generally , there is no scientific consensus on how and if climate change may affect enso .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        },
+        {
+          "uid": 2528,
+          "filename": "wikipedia_2017_Climate change and agriculture.txt",
+          "content_raw": "However , as climate change affects enso and consequently delays planting , harvesting will be late and in drier conditions , resulting in less potential yields .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "enso",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 13676,
+          "filename": "wikipedia_2017_Synoptic scale meteorology.txt",
+          "content_raw": "Areas of precipitation help determine the frontal type and location .",
+          "connective": "determine",
+          "cause_event": "areas of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "location",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3398,
+          "filename": "wikipedia_2017_Climate change in the United States.txt",
+          "content_raw": "The available electricity supply could also be affected by climate change .",
+          "connective": "affected by",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "electricity supply",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2395,
+          "filename": "wikipedia_2017_Climate change and agriculture.txt",
+          "content_raw": "But much remains unknown about exactly how climate change may affect farming and food security , in part because the role of farmer behaviour is poorly captured by crop climate models .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "farming security",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 3147,
+          "filename": "wikipedia_2017_Climate change in Sweden.txt",
+          "content_raw": "Climate change may affect the health status of the population in several ways .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "of population",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "health status",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2657,
+          "filename": "wikipedia_2017_Climate change and poverty.txt",
+          "content_raw": "Climate change could affect agriculture in several ways including productivity , agricultural practices , environmental effects , and distribution of rural space .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "distribution of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "rural space",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2660,
+          "filename": "wikipedia_2017_Climate change and poverty.txt",
+          "content_raw": "Climate change could affect agriculture in several ways including productivity , agricultural practices , environmental effects , and distribution of rural space .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "environmental effects",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 746,
+          "filename": "wikipedia_2017_Azolla event.txt",
+          "content_raw": "High temperatures and winds led to high evaporation , increasing the density of the ocean , and through an increase in rainfall high discharge from rivers which fed the basin .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "rainfall",
+      "parent": "evaporation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 10500,
+          "filename": "wikipedia_2017_Nuclear power.txt",
+          "content_raw": "Climate change causing weather extremes such as heat waves , reduced precipitation levels and droughts can have a significant impact on all thermal power station infrastructure , including large biomass electric and fission electric stations alike , if cooling in these power stations , namely in the steam condenser is provided by certain freshwater sources .",
+          "connective": "reduce",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "precipitation levels",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 8422,
+          "filename": "wikipedia_2017_History of climate change science.txt",
+          "content_raw": "On the other hand , a reduction of the quantity of carbon dioxide in the atmosphere to an amount ranging from 55 to 62 per cent , of the present content , would reduce the average temperature 4 or 5 c , which would bring on a glaciation comparable to that of the pleistocene period .",
+          "connective": "reduce",
+          "cause_event": "reduction of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "temperature",
+      "parent": "carbon dioxide"
+    },
+    {
+      "segment": [
+        {
+          "uid": 6280,
+          "filename": "wikipedia_2017_Effects of global warming.txt",
+          "content_raw": "Some are the result of a generalised global change , such as rising temperature , resulting in local effects , such as melting ice .",
+          "connective": "result in",
+          "cause_event": "rising",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "melting ice",
+      "parent": "temperature"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2688,
+          "filename": "wikipedia_2017_Climate change and poverty.txt",
+          "content_raw": "Climate change could also change the geographic range of vector borne , specifically mosquito borne disease such as malaria and dengue fever exposing new populations to the disease .",
+          "connective": "change",
+          "cause_event": "0",
+          "effect_event": "of vector",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "geographic range",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5447,
+          "filename": "wikipedia_2017_Effects of global warming on Australia.txt",
+          "content_raw": "Climate change will affect growth , species composition and pest incursion of native species and in turn will profoundly affect water supply from these catchments .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "growth of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "native species",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 5871,
+          "filename": "wikipedia_2017_Effects of global warming on human health.txt",
+          "content_raw": "Climate change is expected to lead to latitudinal and altitudinal temperature increases .",
+          "connective": "lead to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "altitudinal temperature increases",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2519,
+          "filename": "wikipedia_2017_Climate change and agriculture.txt",
+          "content_raw": "Some scientists think agriculture could be affected by any decrease in stratospheric ozone , which could increase biologically dangerous ultraviolet radiation excess ultraviolet radiation b can directly affect plant physiology and cause massive amounts of mutations , and indirectly through changed pollinator behavior , though such changes are not simple to quantify .",
+          "connective": "increase",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "biologically dangerous ultraviolet radiation excess ultraviolet radiation",
+      "parent": "agriculture"
+    },
+    {
+      "segment": [
+        {
+          "uid": 13213,
+          "filename": "wikipedia_2017_Solar cycle.txt",
+          "content_raw": "Both long term and short term variations in solar activity are theorized to affect global climate , but it has proven challenging to quantify the link between solar variation and climate .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "global climate",
+      "parent": "variations"
+    },
+    {
+      "segment": [
+        {
+          "uid": 10961,
+          "filename": "wikipedia_2017_PaleoceneEocene Thermal Maximum.txt",
+          "content_raw": "Volcanic eruptions of a large magnitude can impact global climate , reducing the amount of solar radiation reaching the earth 's surface , lowering temperatures in the troposphere , and changing atmospheric circulation patterns .",
+          "connective": "reduce",
+          "cause_event": "0",
+          "effect_event": "amount of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "solar radiation",
+      "parent": "global climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7402,
+          "filename": "wikipedia_2017_Geothermal gradient.txt",
+          "content_raw": "A variation in surface temperature induced by climate changes and the milankovitch cycle can penetrate below the earth 's surface and produce an oscillation in the geothermal gradient with periods varying from daily to tens of thousands of years and an amplitude which decreases with depth and having a scale depth of several kilometers .",
+          "connective": "produce",
+          "cause_event": "variation in",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CREATE"
+        }
+      ],
+      "name": "oscillation",
+      "parent": "surface temperature"
+    },
+    {
+      "segment": [
+        {
+          "uid": 11988,
+          "filename": "wikipedia_2017_Quaternary glaciation.txt",
+          "content_raw": "The increased precipitation that fed the glaciers also increased the runoff of major rivers and intermittent streams , resulting in the growth and development of large pluvial lakes .",
+          "connective": "increase",
+          "cause_event": "increased",
+          "effect_event": "intermittent streams",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "runoff",
+      "parent": "precipitation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 12521,
+          "filename": "wikipedia_2017_Retreat of glaciers since 1850.txt",
+          "content_raw": "A reduction in runoff will affect the ability to irrigate crops and will reduce summer stream flows necessary to keep dams and reservoirs replenished .",
+          "connective": "reduce",
+          "cause_event": "reduction in",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "summer stream",
+      "parent": "runoff"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2706,
+          "filename": "wikipedia_2017_Climate change feedback.txt",
+          "content_raw": "An example of a climate forcing is increased atmospheric concentrations of greenhouse gases .",
+          "connective": "increase",
+          "cause_event": "example of",
+          "effect_event": "of greenhouse gases",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "INCREASE"
+        }
+      ],
+      "name": "atmospheric concentrations",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 12806,
+          "filename": "wikipedia_2017_Scientific opinion on climate change.txt",
+          "content_raw": "They state further that the continuing reliance on combustion of fossil fuels as the world 's primary source of energy will lead to much higher atmospheric concentrations of greenhouse gases , which will , in turn , cause significant increases in surface temperature , sea level , ocean acidification , and their related consequences to the environment and society .",
+          "connective": "cause",
+          "cause_event": "of greenhouse gases",
+          "effect_event": "significant increases to",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "environment",
+      "parent": "atmospheric concentrations"
+    },
+    {
+      "segment": [
+        {
+          "uid": 1712,
+          "filename": "wikipedia_2017_Carbon offset.txt",
+          "content_raw": "Overall , carbon offsets improve the environment by reducing the amount of greenhouse gases in the earths atmosphere .",
+          "connective": "reduce",
+          "cause_event": "0",
+          "effect_event": "amount of",
+          "cause_switch": "0",
+          "effect_switch": "1",
+          "connective_type": "REDUCE"
+        }
+      ],
+      "name": "greenhouse gases",
+      "parent": "environment"
+    },
+    {
+      "segment": [
+        {
+          "uid": 2562,
+          "filename": "wikipedia_2017_Climate change and ecosystems.txt",
+          "content_raw": "With high confidence , they concluded that climate change would result in the extinction of many species and a reduction in the diversity of ecosystems .",
+          "connective": "result in",
+          "cause_event": "0",
+          "effect_event": "of many species",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "extinction",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 7030,
+          "filename": "wikipedia_2017_Extinction risk from global warming.txt",
+          "content_raw": "Global estimates of extinctions due to climate change may have greatly overestimated the probability of extinction .",
+          "connective": "due to",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "extinctions",
+      "parent": "climate change"
+    },
+    {
+      "segment": [
+        {
+          "uid": 11682,
+          "filename": "wikipedia_2017_Politics of global warming.txt",
+          "content_raw": "This essential nature to the world 's economies combined with the complexity of the science and the interests of countless interested parties make climate change a non traditional environmental challenge .",
+          "connective": "change",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CHANGE"
+        }
+      ],
+      "name": "traditional environmental challenge",
+      "parent": "climate"
+    },
+    {
+      "segment": [
+        {
+          "uid": 11458,
+          "filename": "wikipedia_2017_Physical impacts of climate change.txt",
+          "content_raw": "Scientists have found evidence that increased evaporation could result in more extreme weather as global warming progresses .",
+          "connective": "result in",
+          "cause_event": "increased",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "weather",
+      "parent": "evaporation"
+    },
+    {
+      "segment": [
+        {
+          "uid": 10287,
+          "filename": "wikipedia_2017_Natural environment.txt",
+          "content_raw": "This environment encompasses the interaction of all living species , climate , weather , and natural resources that affect human survival and economic activity .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "human survival",
+      "parent": "weather"
+    },
+    {
+      "segment": [
+        {
+          "uid": 1298,
+          "filename": "wikipedia_2017_Blue carbon.txt",
+          "content_raw": "Trees and shrubs reduce the amount of rainfall that impacts the dirt , and create obstacles that forest streams must flow around .",
+          "connective": "impact",
+          "cause_event": "amount of",
+          "effect_event": "0",
+          "cause_switch": "1",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "dirt",
+      "parent": "rainfall"
+    },
+    {
+      "segment": [
+        {
+          "uid": 10285,
+          "filename": "wikipedia_2017_Natural environment.txt",
+          "content_raw": "This environment encompasses the interaction of all living species , climate , weather , and natural resources that affect human survival and economic activity .",
+          "connective": "affect",
+          "cause_event": "0",
+          "effect_event": "0",
+          "cause_switch": "0",
+          "effect_switch": "0",
+          "connective_type": "CAUSE"
+        }
+      ],
+      "name": "economic activity",
+      "parent": "weather"
+    }
+  ],
+  "head": {
+    "code": "OK"
+  }
+}
