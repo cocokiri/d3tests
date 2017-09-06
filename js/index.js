@@ -42,24 +42,62 @@ function typeToNumber(type) {
 const legend = {
 
     "CAUSE": {
-        path: `M 5 5
-        L 10 5 
-        L 15 5`,
-        // path: [{
-        //     x: 5,
-        //     y: 5
-        // }, {
-        //     x: 10,
-        //     y: 15
-        // }, {
-        //     x: 15, y: 5
-        // }
-        // ],
+        // path: `M 5 5
+        // L 10 20
+        // L 15 5`,
+        path: [{
+            x: 5,
+            y: 5
+        }, {
+            x: 10,
+            y: 15
+        }, {
+            x: 15, y: 5
+        }
+        ],
         color: "orange",
         idNum: 3
     },
     "INCREASE": {
-        path: "M5,5 L10,5 M7.5,7.5 L7.5,2.5,"
+        path: [{
+            x: 5,
+            y: 5
+        }, {
+            x: 15,
+            y: 5
+        }, {
+            x: 10, y: 5
+        }, {
+
+            x: 10, y: 10
+        }, {
+            x: 10, y: 0
+        }
+        ],
+        color: "green",
+        idNum: 2
+    },
+    "REDUCE": {
+        path: [{
+            x: 5, y:5
+        },
+            {x: 5, y:15}
+        ],
+        color: "darkred",
+        idNum:1
+    },
+    "ENABLE": {
+        path: [{
+            x:5, y:15
+        }, {
+            x:5, y:5
+        },{
+            x:15, y:5
+        }, {
+            x:15, y: 15
+        }],
+        color: "yellow",
+        idNum: 0
     }
 }
 
@@ -68,6 +106,9 @@ d3.json("./climate.json", function (thedata) {
     console.log("TPOAL", thedata)
     shmu = thedata
 });
+
+d3.select('body').append('svg').append('path').attr('d', legend.CAUSE.path).append('path').attr(
+    'd', legend.ENABLE.path)
 
 //function Factory
 const cleanData = d3.stratify()
@@ -186,12 +227,21 @@ setTimeout(function () {
         });
 
     node.append('svg') //svg as parent for path to move it
+        .data(nodes.descendants().slice(1))
         .attr('y', -15)
         .attr('x', -10)
         .append('path')
-        .attr('d', legend.INCREASE.path)
-        .attr('fill', "none").attr('stroke', legend.CAUSE.color ).attr('stroke-width', 5)
-
+        .attr('d', d => {
+            console.log("data", d);
+            const type = legend[d.data.data.segment[0].connective_type]
+            if (type) {
+                return lineFn(type.path)
+            }
+            else {
+                return undefined
+            }
+        })
+        .attr('fill', "none").attr('stroke', legend.CAUSE.color).attr('stroke-width', 3)
 }, 1000)
 
 
