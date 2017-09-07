@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<svg width="960" height="960"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+
+    window.onload = function () {
+        console.log("HIIO")
+        var π = Math.PI,
+            τ = 360,
+            n = 4 ;
+
+        var width = 960,
+            height = 960,
+            outerRadius = width / 2 - 20,
+            innerRadius = outerRadius - 80;
+
+        d3.select("svg").append("g")
+//            .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")")
+            .selectAll("path")
+            .data(d3.range(0, τ, 50))
+            .enter().append("path")
+            .attr("d", (d) => {
+                return `M 100,100 L ${100+d},${100+d}`
+            })
+            .style("stroke", function (d) {
+                return d3.hsl(d * 360 / τ, 1, 0.5);
+            })
+            .attr("stroke-width", 10).attr("stroke-opacity", 0.3)
+
+        d3.select(self.frameElement).style("height", height + "px");
+    }
+</script>

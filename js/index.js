@@ -107,9 +107,6 @@ d3.json("./climate.json", function (thedata) {
     shmu = thedata
 });
 
-d3.select('body').append('svg').append('path').attr('d', legend.CAUSE.path).append('path').attr(
-    'd', legend.ENABLE.path)
-
 //function Factory
 const cleanData = d3.stratify()
     .id(function (d) {
@@ -136,26 +133,28 @@ setTimeout(function () {
 
     // Set the dimensions and margins of the diagram
     var margin = {top: 40, right: 90, bottom: 50, left: 90},
-        w = 1200 - margin.left - margin.right,
-        h = 800 - margin.top - margin.bottom;
+        w = 800 - margin.left - margin.right,
+        h = 1000 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
     var svg = d3.select('body').append('svg')
-        .attr('width', w + margin.left + margin.right)
-        .attr('height', h + margin.top + margin.bottom)
+        .attr('width', w + margin.left + margin.right) //shifted for rotate
+        .attr('height', h + margin.top + margin.bottom) //rotate
+        // .attr('transform', "translate(100, 50)")
         .attr('transform', 'rotate(-90)');
 
 
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
     var g = svg.append('g')
-        .attr('transform',
-            'translate(' + margin.left + ',' + margin.top + ')');
-    // .attr('transform', 'translate(90,0)')
+        // .attr('width', w + margin.left + margin.right) //shifted for rotate
+        // .attr('height', h + margin.top + margin.bottom) //rotate
+        .attr('transform', 'translate(' + 100 + ',' + (margin.top + 110) + ')') //left = top because of 90deg rotation
+        // .attr('transform', 'rotate(44)')
 
 // declares a tree layout and assigns the size
     var tree = d3.tree()
-        .size([w, h]);
+        .size([w, h]); //rotate
 
 // Assigns parent
     var nodes = d3.hierarchy(data);
@@ -169,7 +168,7 @@ setTimeout(function () {
         .data(nodes.descendants().slice(1)) //nodes without Eve
         .enter()
         .append("path")
-        .attr("class", "link")
+        // .style('stroke', "link_grad")
         .attr("d", (d) => {
             return "M" + d.x + "," + d.y
                 + "C" + d.x + "," + (d.y + d.parent.y) / 2
@@ -177,7 +176,10 @@ setTimeout(function () {
                 + " " + d.parent.x + "," + d.parent.y;
         })
         .attr('fill', 'none')
-        .attr('stroke', d => NumberToHSLa(typeToNumber(d.data.data.segment[0].connective_type)))
+        .attr('stroke', d => {
+            const type = legend[d.data.data.segment[0].connective_type];
+            return type ? type.color : "grey"
+        })
         .attr('stroke-opacity', d => 1 - d.data.depth / 6)
         .attr('stroke-width', d => 4 - d.data.depth / 2)
 
@@ -198,8 +200,9 @@ setTimeout(function () {
         .attr('r', 10)
         .attr('cy', +10) //cy because it's 90deg rotated
 
-        .attr('fill', 'none')
-        .attr('stroke', "red")
+        .attr('fill', 'white')
+        .attr('stroke', "black")
+        .attr('stroke-width', "4")
 
 // adds the text to the node
 
@@ -241,9 +244,12 @@ setTimeout(function () {
                 return undefined
             }
         })
-        .attr('fill', "none").attr('stroke', legend.CAUSE.color).attr('stroke-width', 3)
+        .attr('fill', "none").attr('stroke', "black").attr('stroke-width', 3)
 }, 1000)
 
+function colorData(type) {
+    return "grey"
+}
 
 function addGradientToSVG(elem) {
     let gradient = elem.append("svg:defs")
