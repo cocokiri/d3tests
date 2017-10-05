@@ -130,6 +130,8 @@ const lineFn = d3.line()
 setTimeout(function () {
 
     data = cleanData(shmu.body);
+    console.log(data, 'clean')
+    console.log(shmu.body, 'body')
 
     // Set the dimensions and margins of the diagram
     var margin = {top: 40, right: 90, bottom: 50, left: 90},
