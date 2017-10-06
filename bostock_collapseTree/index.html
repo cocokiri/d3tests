@@ -73,7 +73,9 @@
             }
         }
         const h = d3.hierarchy(rootAncestor);
+        const s = d3.stratify();
         console.log(h)
+        console.log(s(rootAncestor));
 
         tree = tree(h)
 

@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0b4302ed-8b4f-4783-9353-7844106f5b76" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bostock_collapseTree/.idea/bostock_collapseTree.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bostock_collapseTree/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bostock_collapseTree/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bostock_collapseTree/index.html" afterPath="$PROJECT_DIR$/bostock_collapseTree/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/index.js" afterPath="$PROJECT_DIR$/js/index.js" />
     </list>
@@ -20,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="455">
+              <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -37,15 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+            <state relative-caret-position="246">
+              <caret line="239" column="42" lean-forward="true" selection-start-line="239" selection-start-column="42" selection-end-line="239" selection-end-column="42" />
               <folding>
                 <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-                <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../search2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,21 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../bostock_collapseTree/index.html">
+      <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bostock_collapseTree/flare.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flare.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../bostock_collapseTree/flare.json">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bostock_collapseTree/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5685">
-              <caret line="379" column="1" lean-forward="false" selection-start-line="379" selection-start-column="1" selection-end-line="379" selection-end-column="1" />
+            <state relative-caret-position="374">
+              <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -110,6 +124,8 @@
       <find>links</find>
       <find>nodes</find>
       <find>tree</find>
+      <find>stra</find>
+      <find>style</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,11 +136,12 @@
       <list>
         <option value="$PROJECT_DIR$/../gradients.html" />
         <option value="$PROJECT_DIR$/../gradient2.html" />
-        <option value="$PROJECT_DIR$/js/index.js" />
         <option value="$PROJECT_DIR$/../bostock_collapseTree/flare.json" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/index2.js" />
         <option value="$PROJECT_DIR$/../bostock_collapseTree/index.html" />
+        <option value="$PROJECT_DIR$/bostock_collapseTree/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/index.js" />
       </list>
     </option>
   </component>
@@ -236,12 +253,12 @@
       <workItem from="1504776095283" duration="921000" />
       <workItem from="1504777900841" duration="1280000" />
       <workItem from="1504779708773" duration="828000" />
-      <workItem from="1507215974859" duration="3393000" />
+      <workItem from="1507215974859" duration="11366000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30855000" />
+    <option name="totallyTimeSpent" value="38828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="794" extended-state="6" />
@@ -276,9 +293,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gradients.html" />
-    <entry file="file://$PROJECT_DIR$/../gradient2.html" />
-    <entry file="file://$PROJECT_DIR$/../because/search.js" />
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -295,7 +309,6 @@
           <caret line="246" column="51" lean-forward="false" selection-start-line="246" selection-start-column="51" selection-end-line="246" selection-end-column="51" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -316,7 +329,6 @@
           <caret line="156" column="16" lean-forward="true" selection-start-line="156" selection-start-column="16" selection-end-line="156" selection-end-column="16" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -337,7 +349,6 @@
           <caret line="146" column="0" lean-forward="true" selection-start-line="146" selection-start-column="0" selection-end-line="146" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -358,7 +369,6 @@
           <caret line="87" column="6" lean-forward="true" selection-start-line="87" selection-start-column="6" selection-end-line="87" selection-end-column="6" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -379,7 +389,6 @@
           <caret line="232" column="107" lean-forward="false" selection-start-line="232" selection-start-column="107" selection-end-line="232" selection-end-column="107" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -400,7 +409,6 @@
           <caret line="206" column="47" lean-forward="false" selection-start-line="206" selection-start-column="47" selection-end-line="206" selection-end-column="47" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -421,7 +429,6 @@
           <caret line="191" column="22" lean-forward="false" selection-start-line="191" selection-start-column="22" selection-end-line="191" selection-end-column="22" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -442,7 +449,6 @@
           <caret line="146" column="70" lean-forward="false" selection-start-line="146" selection-start-column="70" selection-end-line="146" selection-end-column="70" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -463,7 +469,6 @@
           <caret line="61" column="54" lean-forward="false" selection-start-line="61" selection-start-column="54" selection-end-line="61" selection-end-column="54" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -482,7 +487,6 @@
           <caret line="45" column="25" lean-forward="false" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -493,7 +497,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -501,41 +504,6 @@
     <entry file="file://$PROJECT_DIR$/../because/search.js" />
     <entry file="file://$PROJECT_DIR$/../gradients.html" />
     <entry file="file://$PROJECT_DIR$/../gradient2.html" />
-    <entry file="file://$PROJECT_DIR$/js/index2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="2" lean-forward="false" selection-start-line="33" selection-start-column="2" selection-end-line="33" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="118" column="0" lean-forward="true" selection-start-line="118" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
-            <element signature="n#!!block;n#NumberToHSLa#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/climate.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../bostock_collapseTree/flare.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5685">
@@ -549,6 +517,64 @@
         <state relative-caret-position="120">
           <caret line="77" column="22" lean-forward="false" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bostock_collapseTree/flare.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bostock_collapseTree/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="77" column="34" lean-forward="false" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/climate.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="33" column="23" lean-forward="true" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../search2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="239" column="42" lean-forward="true" selection-start-line="239" selection-start-column="42" selection-end-line="239" selection-end-column="42" />
+          <folding>
+            <element signature="n#!!block;n#addGradientToSVG#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

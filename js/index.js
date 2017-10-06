@@ -79,27 +79,27 @@ const legend = {
     },
     "REDUCE": {
         path: [{
-            x: 5, y:5
+            x: 5, y: 5
         },
-            {x: 5, y:15}
+            {x: 5, y: 15}
         ],
         color: "darkred",
-        idNum:1
+        idNum: 1
     },
     "ENABLE": {
         path: [{
-            x:5, y:15
+            x: 5, y: 15
         }, {
-            x:5, y:5
-        },{
-            x:15, y:5
+            x: 5, y: 5
         }, {
-            x:15, y: 15
+            x: 15, y: 5
+        }, {
+            x: 15, y: 15
         }],
         color: "yellow",
         idNum: 0
     }
-}
+};
 
 
 d3.json("./climate.json", function (thedata) {
@@ -107,6 +107,7 @@ d3.json("./climate.json", function (thedata) {
     shmu = thedata
 });
 
+const D2R = Math.PI / 180;
 //function Factory
 const cleanData = d3.stratify()
     .id(function (d) {
@@ -142,21 +143,23 @@ setTimeout(function () {
     var svg = d3.select('body').append('svg')
         .attr('width', w + margin.left + margin.right) //shifted for rotate
         .attr('height', h + margin.top + margin.bottom) //rotate
-        // .attr('transform', "translate(100, 50)")
-        .attr('transform', 'rotate(-90)');
+        .attr('transform', "translate(100, 50)")
+    // .attr('transform', 'rotate(-45)');
 
 
 // appends a 'group' element to 'svg'
 // moves the 'group' element to the top left margin
     var g = svg.append('g')
-        // .attr('width', w + margin.left + margin.right) //shifted for rotate
-        // .attr('height', h + margin.top + margin.bottom) //rotate
+    // .attr('width', w + margin.left + margin.right) //shifted for rotate
+    // .attr('height', h + margin.top + margin.bottom) //rotate
         .attr('transform', 'translate(' + 100 + ',' + (margin.top + 110) + ')') //left = top because of 90deg rotation
-        // .attr('transform', 'rotate(44)')
+    // .attr('transform', 'rotate(44)')
 
 // declares a tree layout and assigns the size
     var tree = d3.tree()
         .size([w, h]); //rotate
+
+    const xToRad = 1 / w * 360 * D2R;
 
 // Assigns parent
     var nodes = d3.hierarchy(data);
@@ -165,25 +168,58 @@ setTimeout(function () {
     nodes = tree(nodes);
     console.log(nodes)
 
+
+    //just to make transformations without mutating the tree
+    function objPlusParentClone(obj) {
+        const {x, y} = obj;
+        const parentX = obj.parent.x;
+        const parentY = obj.parent.y;
+        return {
+            parent: {
+                x: parentX,
+                y: parentY
+            },
+            x: x,
+            y: y
+        }
+    }
+
+    function transformToRadial(presets) {
+        const {obj, xOff, yOff} = presets;
+
+        const lineObj = {
+            x: xOff + obj.y / 2 * Math.cos(obj.x * xToRad),
+            y: yOff + obj.y / 2 * Math.sin(obj.x * xToRad),
+            parent: {
+                x: xOff + obj.parent.y / 2 * Math.cos(obj.parent.x * xToRad),
+                y: yOff + obj.parent.y / 2 * Math.sin(obj.parent.x * xToRad),
+            }
+        }
+        return lineObj;
+
+    }
+
 // adds the links between the nodes
-    var link = g.selectAll(".link")  //nothing
-        .data(nodes.descendants().slice(1)) //nodes without Eve
-        .enter()
-        .append("path")
-        // .style('stroke', "link_grad")
-        .attr("d", (d) => {
-            return "M" + d.x + "," + d.y
-                + "C" + d.x + "," + (d.y + d.parent.y) / 2
-                + " " + d.parent.x + "," + (d.y + d.parent.y) / 2
-                + " " + d.parent.x + "," + d.parent.y;
-        })
-        .attr('fill', 'none')
-        .attr('stroke', d => {
-            const type = legend[d.data.data.segment[0].connective_type];
-            return type ? type.color : "grey"
-        })
-        .attr('stroke-opacity', d => 1 - d.data.depth / 6)
-        .attr('stroke-width', d => 4 - d.data.depth / 2)
+//     var link = g.selectAll(".link")  //nothing
+//         .data(nodes.descendants().slice(1)) //nodes without Eve
+//         .enter()
+//         .append("path")
+//         // .style('stroke', "link_grad")
+//         .attr("d", (d) => {
+//             d = objPlusParentClone(d);
+//             d = transformToRadial({obj: d, xOff: w / 2, yOff: h / 2})
+//             return "M" + d.x + "," + d.y
+//                 + "C" + d.x + "," + (d.y + d.parent.y) / 2
+//                 + " " + d.parent.x + "," + (d.y + d.parent.y) / 2
+//                 + " " + d.parent.x + "," + d.parent.y;
+//         })
+//         .attr('fill', 'none')
+//         .attr('stroke', d => {
+//             const type = legend[d.data.data.segment[0].connective_type];
+//             return type ? type.color : "grey"
+//         })
+//         .attr('stroke-opacity', d => 1 - d.data.depth / 6)
+//         .attr('stroke-width', d => 4 - d.data.depth / 2)
 
 // adds each node as a group
     var node = g.selectAll('.node')
@@ -194,8 +230,27 @@ setTimeout(function () {
             return "node" +
                 (d.children ? " node--internal" : " node--leaf");
         })
-        .attr("transform", (d) => "translate(" + d.x + "," + d.y + ")")
+        .attr("transform", (d) => `translate(${w / 2 + d.y / 2 * Math.cos(d.x * xToRad)}, ${h / 2 + d.y / 2 * Math.sin(d.x * xToRad)})`)
+        // .style("visibility", 'hidden')
 
+
+    node.append('path')
+        .data(nodes.descendants().slice(1))
+        .attr("d", (d) => {
+            let c = objPlusParentClone(d);
+            c = transformToRadial({obj: c, xOff: w / 2, yOff: h / 2})
+        return "M" + c.x + "," + c.y
+            + "C" + c.x + "," + (c.y + c.parent.y) / 2
+            + " " + c.parent.x + "," + (c.y + c.parent.y) / 2
+            + " " + c.parent.x + "," + c.parent.y;
+    })
+        .attr('fill', 'none')
+        .attr('stroke', d => {
+            const type = legend[d.data.data.segment[0].connective_type];
+            return type ? type.color : "grey"
+        })
+        .attr('stroke-opacity', d => 1 - d.data.depth / 6)
+        .attr('stroke-width', d => 4 - d.data.depth / 2)
 
 // adds the circle to the node
     node.append('circle')
@@ -231,23 +286,26 @@ setTimeout(function () {
             return d.data.id;
         });
 
-    node.append('svg') //svg as parent for path to move it
-        .data(nodes.descendants().slice(1))
-        .attr('y', -15)
-        .attr('x', -10)
-        .append('path')
-        .attr('d', d => {
-            console.log("data", d);
-            const type = legend[d.data.data.segment[0].connective_type]
-            if (type) {
-                return lineFn(type.path)
-            }
-            else {
-                return undefined
-            }
-        })
-        .attr('fill', "none").attr('stroke', "black").attr('stroke-width', 3)
-}, 1000)
+    // node.append('svg') //svg as parent for path to move it
+    //     .data(nodes.descendants().slice(1))
+    //     .attr('y', -15)
+    //     .attr('x', -10)
+    //     .append('path')
+    //     .attr('d', d => {
+    //         console.log("data", d);
+    //         const type = legend[d.data.data.segment[0].connective_type]
+    //         if (type) {
+    //             return lineFn(type.path)
+    //         }
+    //         else {
+    //             return undefined
+    //         }
+    //     })
+    //     .attr('fill', "none")
+    //     .attr('stroke', "black")
+    //     .attr('stroke-width', 3);
+
+}, 1000);
 
 function colorData(type) {
     return "grey"
