@@ -152,7 +152,7 @@ setTimeout(function () {
     var g = svg.append('g')
     // .attr('width', w + margin.left + margin.right) //shifted for rotate
     // .attr('height', h + margin.top + margin.bottom) //rotate
-        .attr('transform', 'translate(' + 100 + ',' + (margin.top + 110) + ')') //left = top because of 90deg rotation
+    //     .attr('transform', 'translate(' + 100 + ',' + (margin.top + 110) + ')') //left = top because of 90deg rotation
     // .attr('transform', 'rotate(44)')
 
 // declares a tree layout and assigns the size
@@ -200,26 +200,26 @@ setTimeout(function () {
     }
 
 // adds the links between the nodes
-//     var link = g.selectAll(".link")  //nothing
-//         .data(nodes.descendants().slice(1)) //nodes without Eve
-//         .enter()
-//         .append("path")
-//         // .style('stroke', "link_grad")
-//         .attr("d", (d) => {
-//             d = objPlusParentClone(d);
-//             d = transformToRadial({obj: d, xOff: w / 2, yOff: h / 2})
-//             return "M" + d.x + "," + d.y
-//                 + "C" + d.x + "," + (d.y + d.parent.y) / 2
-//                 + " " + d.parent.x + "," + (d.y + d.parent.y) / 2
-//                 + " " + d.parent.x + "," + d.parent.y;
-//         })
-//         .attr('fill', 'none')
-//         .attr('stroke', d => {
-//             const type = legend[d.data.data.segment[0].connective_type];
-//             return type ? type.color : "grey"
-//         })
-//         .attr('stroke-opacity', d => 1 - d.data.depth / 6)
-//         .attr('stroke-width', d => 4 - d.data.depth / 2)
+    var link = g.selectAll(".link")  //nothing
+        .data(nodes.descendants().slice(1)) //nodes without Eve
+        .enter()
+        .append("path")
+        // .style('stroke', "link_grad")
+        .attr("d", (d) => {
+            d = objPlusParentClone(d);
+            d = transformToRadial({obj: d, xOff: w / 2, yOff: h / 2})
+            return "M" + d.x + "," + d.y
+                + "C" + d.x + "," + (d.y + d.parent.y) / 2
+                + " " + d.parent.x + "," + (d.y + d.parent.y) / 2
+                + " " + d.parent.x + "," + d.parent.y;
+        })
+        .attr('fill', 'none')
+        .attr('stroke', d => {
+            const type = legend[d.data.data.segment[0].connective_type];
+            return type ? type.color : "grey"
+        })
+        .attr('stroke-opacity', d => 1 - d.data.depth / 6)
+        .attr('stroke-width', d => 4 - d.data.depth / 2)
 
 // adds each node as a group
     var node = g.selectAll('.node')
@@ -231,27 +231,9 @@ setTimeout(function () {
                 (d.children ? " node--internal" : " node--leaf");
         })
         .attr("transform", (d) => `translate(${w / 2 + d.y / 2 * Math.cos(d.x * xToRad)}, ${h / 2 + d.y / 2 * Math.sin(d.x * xToRad)})`)
-        // .style("visibility", 'hidden')
+        .style("visibility", '')
 
-
-    node.append('path')
-        .data(nodes.descendants().slice(1))
-        .attr("d", (d) => {
-            let c = objPlusParentClone(d);
-            c = transformToRadial({obj: c, xOff: w / 2, yOff: h / 2})
-        return "M" + c.x + "," + c.y
-            + "C" + c.x + "," + (c.y + c.parent.y) / 2
-            + " " + c.parent.x + "," + (c.y + c.parent.y) / 2
-            + " " + c.parent.x + "," + c.parent.y;
-    })
-        .attr('fill', 'none')
-        .attr('stroke', d => {
-            const type = legend[d.data.data.segment[0].connective_type];
-            return type ? type.color : "grey"
-        })
-        .attr('stroke-opacity', d => 1 - d.data.depth / 6)
-        .attr('stroke-width', d => 4 - d.data.depth / 2)
-
+    console.log(node)
 // adds the circle to the node
     node.append('circle')
         .attr('r', 10)
@@ -264,27 +246,27 @@ setTimeout(function () {
 // adds the text to the node
 
 
-    node.append("text")
-        .attr("dy", 3)
-        .attr("y", (d) => d.children ? -100 : 20)
-        .style("text-anchor", (d) => d.children ? "end" : "start")
-        .text((d) => d.data.name);
-
-    // Add labels for the nodes
+    // node.append("text")
+    //     .attr("dy", 3)
+    //     .attr("y", (d) => d.children ? -100 : 20)
+    //     .style("text-anchor", (d) => d.children ? "end" : "start")
+    //     .text((d) => d.data.name);
     //
-    node.append('text')
-        .attr('transform', 'rotate(90)')
-
-        .attr("dy", ".35em")
-        .attr("x", function (d) {
-            return d.children || d._children ? -13 : 13;
-        })
-        .attr("text-anchor", function (d) {
-            return d.children || d._children ? "end" : "start";
-        })
-        .text(function (d) {
-            return d.data.id;
-        });
+    // // Add labels for the nodes
+    // //
+    // node.append('text')
+    //     .attr('transform', 'rotate(90)')
+    //
+    //     .attr("dy", ".35em")
+    //     .attr("x", function (d) {
+    //         return d.children || d._children ? -13 : 13;
+    //     })
+    //     .attr("text-anchor", function (d) {
+    //         return d.children || d._children ? "end" : "start";
+    //     })
+    //     .text(function (d) {
+    //         return d.data.id;
+    //     });
 
     // node.append('svg') //svg as parent for path to move it
     //     .data(nodes.descendants().slice(1))
